@@ -1423,7 +1423,7 @@ NodeContainer.prototype.getValue = function() {
 };
 
 NodeContainer.prototype.MATRIX_PROPERTY = /(matrix)\((.+)\)/;
-NodeContainer.prototype.TEXT_SHADOW_PROPERTY = /((rgba|rgb)\([^\)]+\)(\s-?\d+px){0,})/g;
+NodeContainer.prototype.TEXT_SHADOW_PROPERTY = /((rgba|rgb)\([^\)]+\)(\s-?[0-9.]+px){0,})/g;
 NodeContainer.prototype.TEXT_SHADOW_VALUES = /(-?[0-9.]+px)|(#.+)|(rgb\(.+\))|(rgba\(.+\))/g;
 NodeContainer.prototype.CLIP = /^rect\((\d+)px,? (\d+)px,? (\d+)px,? (\d+)px\)$/;
 
